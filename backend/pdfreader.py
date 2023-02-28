@@ -30,31 +30,14 @@ class PdfReader:
         pdf.cell(w=120,h=30,txt="Total:",border=1,align="C")
         pdf.cell(w=162.5,h=30,txt=str(bill.amount),border=1,align="C", ln=1)
         # save the file
-        file=open("counter.txt")
-        file_content=file.read()
-        if len(file_content)>0:
-            count=str(int(file_content)+1)
-            print(count)
-            file.close()
-            file=open("counter.txt",mode="w")
-            file.write(count)
-            file.close()
-        else:
-            count=str(1)
-            file.close()
-            file=open("counter.txt",mode="w")
-            file.write(count)
-            file.close()
-
         pdf.output(self.file_name)
-        webbrowser.open(self.file_name)
+        # webbrowser.open(self.file_name)
     def file_id(self):
         # save the file
         file = open("counter.txt")
         file_content = file.read()
         if len(file_content) > 0:
             count = str(int(file_content) + 1)
-            print(count)
             file.close()
             file = open("counter.txt", mode="w")
             file.write(count)

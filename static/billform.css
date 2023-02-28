@@ -15,31 +15,38 @@ body{
     justify-content: center;
 }
 h1{
-font-size:4.5rem;
-color: darkgray;
+    font-size:4.5rem;
+    color: darkgray;
 }
-.p-wrapper{
+.form-section-wrapper{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
 }
-p{
+.input-label-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+label{
     font-size: 1.5rem;
-    font-weight: 600;
+}
+input{
+    width: 70%;
+    padding: 0.5rem 0.5rem;
+    background-color: darkgray;
+    border: 1px solid lightgray;
+    border-radius: 0.3rem;
 }
 .button-wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-a{
-    background-color: darkgray;
+input[type=submit]{
     padding: 1rem 2rem;
-    font-size: 3rem;
     color: lightgray;
-    text-decoration: none;
-    border-radius: 0.5rem;
+    font-size: 2rem;
 }
-a:hover{
+input[type=submit]:hover{
     transform: translate(1px ,1px);
 }

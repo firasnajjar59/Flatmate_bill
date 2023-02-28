@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Bill Form</title>
+    <link rel="stylesheet" href="../static/billform.css">
 </head>
 <body>
-$END$
+<div class="container">
+    <div class="title-wrapper">
+        <h1>Bill Form</h1>
+    </div>
+    <p>Fill the form and click the buttun to get the results.</p>
+    
+    <form action="/result" method="post">
+        <div class="form-section-wrapper">
+            <div class="input-label-wrapper">{{bill_form.amount.label}} {{bill_form.amount}}</div>
+            <div class="input-label-wrapper">{{bill_form.period.label}} {{bill_form.period}}</div>
+        </div>
+        <hr>
+        <h3>first flatmate</h3>
+        <div class="form-section-wrapper">
+            <div class="input-label-wrapper">{{bill_form.name1.label}} {{bill_form.name1}}</div>
+            <div class="input-label-wrapper">{{bill_form.days_in_month1.label}} {{bill_form.days_in_month1}}</div>
+        </div>
+        <hr>
+        <h3>second flatmate</h3>
+        <div class="form-section-wrapper">
+            <div class="input-label-wrapper">{{bill_form.name2.label}} {{bill_form.name2}}</div>
+            <div class="input-label-wrapper">{{bill_form.days_in_month2.label}} {{bill_form.days_in_month2}}</div>
+        </div>
+    <hr>
+        <div class="button-wrapper">{{bill_form.submit_buttun}}</div>
+    </form>
+</div>
+
+
 </body>
 </html>

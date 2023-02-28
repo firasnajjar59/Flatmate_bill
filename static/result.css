@@ -1,0 +1,29 @@
+body{
+    min-height: 100vh;
+    background-color: lightgrey;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.title-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size:4.5rem;
+    color: darkgray;
+    }
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
